@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+  <span>Course Detail</span>
+  <span class="spacer"></span>
+  <span>
+    <button [routerLink]="'/'" mat-icon-button aria-label="Example icon-button with share icon">
+      <mat-icon>arrow_back_ios</mat-icon>
+    </button>
+  </span>
+</mat-toolbar>
+<main class="main-container">
+  <app-course-detail [course]="course"></app-course-detail>
+</main>

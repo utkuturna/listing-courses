@@ -1,0 +1,10 @@
+<!-- @todo handle no course data case -->
+<div *ngIf="course">
+  <h1 data-test-id="course-title">{{course.name}}</h1>
+  <ng-container *ngIf="course.description">
+    <p>
+      <b>Course Description:</b>
+    </p>
+    <p data-test-id="course-description">{{course.description}}</p>
+  </ng-container>
+</div>
